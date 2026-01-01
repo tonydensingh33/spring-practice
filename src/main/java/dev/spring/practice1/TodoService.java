@@ -1,6 +1,7 @@
 package dev.spring.practice1;
 
 
+import dev.spring.practice1.models.Todo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,11 @@ public class TodoService {
     @Autowired
     private TodoRepository todoRepository;
 
-    public String getData() {
-        return todoRepository.getData();
+    public Todo createTodo(Todo todo) {
+        return todoRepository.save(todo);
+    }
+
+    public Todo getTodo(Long id) {
+        return todoRepository.findById(id).orElse(null);
     }
 }

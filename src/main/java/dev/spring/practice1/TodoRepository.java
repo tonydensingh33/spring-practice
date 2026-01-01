@@ -1,13 +1,10 @@
 package dev.spring.practice1;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+//CRUD
 
-@Component
-public class TodoRepository {
+import dev.spring.practice1.models.Todo;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-    @Autowired
-    String getData() {
-        return "Data is fetched from Respository";
-    }
+public interface TodoRepository extends JpaRepository<Todo, Long> {
+
 }
