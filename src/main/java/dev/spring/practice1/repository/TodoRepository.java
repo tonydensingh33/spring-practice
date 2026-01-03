@@ -1,4 +1,4 @@
-package dev.spring.practice1;
+package dev.spring.practice1.repository;
 
 //CRUD
 

@@ -1,5 +1,6 @@
-package dev.spring.practice1;
+package dev.spring.practice1.controller;
 
+import dev.spring.practice1.service.TodoService;
 import dev.spring.practice1.models.Todo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,7 @@
-package dev.spring.practice1;
+package dev.spring.practice1.service;
 
 import dev.spring.practice1.models.Todo;
+import dev.spring.practice1.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

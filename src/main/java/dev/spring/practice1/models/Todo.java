@@ -22,8 +22,5 @@ public class Todo {
     String title;
     @Size(min = 10, max = 100)
     @Schema(name="title", example = "Complete the task")
-    String description;
     Boolean isCompleted;
-    @Email
-    String email;
 }
